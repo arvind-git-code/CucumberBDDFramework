@@ -1,0 +1,188 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>7/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jan 16 12:10:08 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>17 seconds (17254 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testRunners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "checking for sucessful login by multiple user", "test the login page"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#shopping_cart_container&quot;}
+  (Session info: chrome=131.0.6778.265)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0793e8a5ec9c775d99fa2cdeaa5afb28, findElement {value=shopping_cart_container, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\ALPHA_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52121}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52121/devtoo..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0793e8a5ec9c775d99fa2cdeaa5afb28
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isDisplayed(Unknown Source)
+	at pageFactory.LoginpageFactory.checkLoginStatus(LoginpageFactory.java:74)
+	at stepDefinition.LoginFeature.user_is_able_to_navigate_home_page(LoginFeature.java:64)
+	at ✽.user is able to navigate home page(file:///C:/Users/Alpha_320/git/CucumberBDDFramework-UsingPageFactory/CucumberBDDFramework-UsingPageFactory/src/test/resources/features/login.feature:19)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1515030454", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1515030454'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#shopping_cart_container&quot;}
+  (Session info: chrome=131.0.6778.265)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0793e8a5ec9c775d99fa2cdeaa5afb28, findElement {value=shopping_cart_container, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\ALPHA_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52121}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52121/devtoo..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0793e8a5ec9c775d99fa2cdeaa5afb28
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isDisplayed(Unknown Source)
+	at pageFactory.LoginpageFactory.checkLoginStatus(LoginpageFactory.java:74)
+	at stepDefinition.LoginFeature.user_is_able_to_navigate_home_page(LoginFeature.java:64)
+	at ✽.user is able to navigate home page(file:///C:/Users/Alpha_320/git/CucumberBDDFramework-UsingPageFactory/CucumberBDDFramework-UsingPageFactory/src/test/resources/features/login.feature:19)
+</pre></div></td>
+<td>8</td>
+<td>testRunners.TestRunner@3943a2be</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testRunners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "checking for sucessful login by multiple user", "test the login page"</td>
+<td></td>
+<td>7</td>
+<td>testRunners.TestRunner@3943a2be</td></tr>
+<tr>
+<td title='testRunners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "checking for sucessful login and logout by multiple user", "test the login page"</td>
+<td></td>
+<td>14</td>
+<td>testRunners.TestRunner@3943a2be</td></tr>
+<tr>
+<td title='testRunners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "checking for sucessful login by multiple user", "test the login page"</td>
+<td></td>
+<td>7</td>
+<td>testRunners.TestRunner@3943a2be</td></tr>
+<tr>
+<td title='testRunners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "checking for sucessful login", "test the login page"</td>
+<td></td>
+<td>7</td>
+<td>testRunners.TestRunner@3943a2be</td></tr>
+<tr>
+<td title='testRunners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "checking for sucessful login by multiple user", "test the login page"</td>
+<td></td>
+<td>7</td>
+<td>testRunners.TestRunner@3943a2be</td></tr>
+<tr>
+<td title='testRunners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "checking for sucessful login by multiple user", "test the login page"</td>
+<td></td>
+<td>6</td>
+<td>testRunners.TestRunner@3943a2be</td></tr>
+<tr>
+<td title='testRunners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "checking for sucessful login by multiple user", "test the login page"</td>
+<td></td>
+<td>12</td>
+<td>testRunners.TestRunner@3943a2be</td></tr>
+</table><p>
+</body>
+</html>
