@@ -48,3 +48,21 @@ ___
 [youtube video link -https://youtu.be/tV6beEmkrh4 ](https://youtu.be/tV6beEmkrh4)
 
 
+Contributions are welcome! Please follow these steps:
+-------------------------------------------------------
+Fork the repository.
+
+1. Create a new branch: `git checkout -b feature/your-feature-name`
+
+2. Make your changes and commit them: `git commit -m 'Add some feature'`
+
+3. Push to the branch: `git push origin feature/your-feature-name`
+
+4. Open a pull request.
+
+
+## Connect with me
+
+- **Name:** Arvind Kumar
+- **LinkedIn:** [LinkedIn Profile URL](https://www.linkedin.com/in/arvind-kumar-a8b591221/)
+- **Email:** [Email](mailto:arvindkumarlbsmca@gmail.com)
